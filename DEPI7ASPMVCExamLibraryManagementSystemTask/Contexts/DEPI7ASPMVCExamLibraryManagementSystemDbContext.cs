@@ -23,7 +23,7 @@ namespace DEPI7ASPMVCExamLibraryManagementSystemTask.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(LocalDb)\MSSQLLocalDB; Database=BookCRUDMVCApp;Trusted_Connection=true;");
+            optionsBuilder.UseSqlServer(@"Server=(LocalDb)\MSSQLLocalDB; Database=LibraryManagementSystemDb;Trusted_Connection=true;");
             base.OnConfiguring(optionsBuilder);
         }
         public DbSet<Author> Authors { get; set; }
